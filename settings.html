@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="cnt">
+		<div class="title">Configuration</div>
+		<div class="icons">
+			<a href="./form.html" class="icon icon1"></a>
+			<a href="./configurations.html" class="icon icon2"></a>
+		</div>
+	</div>
+</body>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		background: #0F3870;
+		min-height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.cnt {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 800px;
+	}
+
+	.icons {
+		display: flex;
+		justify-content: center;
+		gap: 100px
+	}
+
+	.icon {
+		background-color: #fff;
+		width: 300px;
+		aspect-ratio: 1;
+		border-radius: 10px;
+		background-size: 55%;
+		background-repeat: no-repeat;
+		background-position: center;
+		cursor: pointer;
+	}
+
+	.icon:hover {
+		transform: scale(102%);
+		box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+	}
+
+	.icon:active {
+		transform: scale(100%);
+		box-shadow: none;
+	}
+
+	.icon1 {
+		background-image: url("images/file.svg");
+	}
+
+	.icon2 {
+		background-image: url("images/settings.svg");
+	}
+
+	.title {
+		font-size: 30px;
+		color: #fff;
+		font-weight: 600;
+		text-align: center;
+		padding-bottom: 50px;
+	}
+</style>
+
+</html>

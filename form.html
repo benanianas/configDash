@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="cntr">
+		<div class="title">Configuration</div>
+		<form class="card">
+			<!--  -->
+			<label for="name">Device name</label>
+			<div class="textInput">
+				<input id="name" type="text" placeholder="name">
+			</div>
+			<!--  -->
+			<label for="server">Server</label>
+			<div class="textInput">
+				<input id="server" type="text" placeholder="Server">
+			</div>
+			<!--  -->
+			<label for="ip">IP addrress</label>
+			<div class="textInput">
+				<input id="ip" type="text" placeholder="IP addrress">
+			</div>
+			<!--  -->
+			<label for="version">Version</label>
+			<div class="textInput">
+				<input id="version" type="text" placeholder="Version">
+			</div>
+			<input type="submit" value="Apply"></input>
+			<!--  -->
+		</form>
+	</div>
+</body>
+<style>
+	:root {
+		--blue: #103069;
+		--gray: #828282;
+		--darkgray: #4a4a4a;
+	}
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--blue);
+
+	}
+
+	.title {
+		color: white;
+		text-align: center;
+		font-size: 2rem;
+		margin-bottom: 30px;
+	}
+
+	.card {
+		font-size: 1.5em;
+		background-color: white;
+		width: 800px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border-radius: 10px;
+		padding-block: 25px;
+	}
+
+	[type="submit"] {
+		border: none;
+		display: inline-block;
+		margin-top: 60px;
+		font-size: 1.5em;
+		padding: 10px 40px;
+		border-radius: 5px;
+		color: white;
+		background: #11998e;
+		background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+		background: linear-gradient(to right, #38ef7d, #11998e);
+		cursor: pointer;
+	}
+
+	[type="submit"]:hover {
+		transform: scale(101%);
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	}
+
+	[type="submit"]:active {
+		transform: scale(1);
+		box-shadow: none;
+	}
+
+	[type="text"] {
+		border: none;
+		width: 100%;
+		height: 100%;
+		border-bottom: 2px solid var(--gray);
+		padding-bottom: 10px;
+	}
+
+
+	[type="text"]:focus {
+		outline: none;
+		border-bottom: 4px solid var(--blue);
+	}
+
+	.textInput {
+		display: inline-block;
+		width: 90%;
+		font-size: 1.5em;
+		color: white;
+	}
+
+	label {
+		align-self: flex-start;
+		margin-left: 40px;
+		color: var(--darkgray);
+	}
+</style>
+
+</html>

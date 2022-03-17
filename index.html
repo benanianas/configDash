@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <div class='cnt'>
+            <div class="top d-flex justify-content-between mb-3">
+              <div class=" h4">Up Time:00:11:39</div>
+              <a href="./settings.html"> <img width="40" height="40" src="images/settings.png" /></a>
+            </div>
+            <div class="row content">
+              <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <div class="circle">
+                    <div role="progressbar" style="--value:20"></div>
+
+                  <div class="circle-txt txt-1">STATUS</div>
+                  <div class="circle-txt txt-2">OP START</div>
+                </div>
+              </div>
+              <div class="col-md-6 cards pt-5" style="color: #363636;">
+                <div class="crd row mb-5" style="border: solid #ff3434 4px;">
+                  <div class="col-9 d-flex justify-content-center align-items-center" style="position: relative;">
+                    <div class="display-3" style="font-weight: 400;"> 469 °C</div>
+                    <div style="position: absolute; bottom: 5px; left: 20px; font-weight: 600; font-size: 1.2rem;">Temperature</div>
+                  </div>
+                  <div class="col-3 d-flex  justify-content-center align-items-center" style="background-color: #ff3434; box-shadow: 0 0 0 2px #ff3434;">
+                   <img width="90" height="90" src="images/temperature.png" />
+                  </div>
+                </div>
+                <div class="crd row mb-5" style="border: solid #ffaa3b 4px;">
+                    <div class="col-9 d-flex justify-content-center align-items-center" style="position: relative;">
+                      <div class="display-3" style="font-weight: 400;"> 09.5 s</div>
+                      <div style="position: absolute; bottom: 5px; left: 20px; font-weight: 600; font-size: 1.2rem;">Cycle Time</div>
+                    </div>
+                    <div class="col-3 d-flex  justify-content-center align-items-center" style="background-color: #ffaa3b;box-shadow: 0 0 0 2px #ffaa3b;">
+                      <img width="90" height="90" src="images/cycle.png" />
+                    </div>
+                  </div>
+                  <div class="crd row mb-5" style="border: solid #04a780 4px;">
+                    <div class="col-9 d-flex justify-content-center align-items-center" style="position: relative;">
+                      <div class="display-3" style="font-weight: 400;"> 4</div>
+                      <div style="position: absolute; bottom: 5px; left: 20px; font-weight: 600; font-size: 1.2rem;">Cycle Count</div>
+                    </div>
+                    <div class="col-3 d-flex  justify-content-center align-items-center" style="background-color: #04a780;box-shadow: 0 0 0 2px #04a780;">
+                      <img width="90" height="90" src="images/counter.png" />
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="px-4">
+            <div style="float: right;">
+                <span style="opacity: .6; font-size: 1.3rem;">Developed by</span>
+                <img class="pb-2" height="50" src="images/logo.png">
+                </div>
+          </div>
+          
+    </body>
+    <style>
+.html, body{
+  width: 100vw;
+  height: 100vh;
+  background: #103069;
+  color: #fff;
+}
+.cnt{
+    min-height: calc(100vh - 60px);
+    padding: 30px
+}
+.content{
+    max-width: 1500px;
+    margin: auto;
+}
+.circle{
+    position: relative;
+    width: 350px;height: 350px;
+    border-radius: 50%;
+    border: solid 1px #fff;
+}
+
+.txt-1{
+    top: 45%;
+    font-size: 1.8rem;
+    opacity: .5;
+    font-weight: 600;
+}
+.txt-2 {
+    top: 55%;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.crd{
+  background: #fff;
+  width: 100%;
+  height: 180px;
+  border-radius: 6px;
+}
+.circle-txt{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+div[role="progressbar"] {
+  --size: 350px;
+  --fg: white;
+  --bg: transparent;
+  --pgPercentage: var(--value);
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: 
+    radial-gradient(closest-side, #103069 95%, transparent 0 99.9%, transparent 0),
+    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+    ;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--fg);
+}
+
+    </style>
+</html>
